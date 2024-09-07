@@ -4,7 +4,7 @@ import datetime as dt
 import random
 import pandas as pd
 
-my_email = "learnPythonin100@gmail.com"
+my_email = "scubidoo@gmail.com"
 password = "jfyx jqtv qdmh zgkt"
 
 # 1. Update the birthdays.csv
@@ -34,5 +34,5 @@ if today_tuple in birthday_dict:
         connection.starttls()  #securing connection to email server
 
         connection.login(user=my_email, password=password)
-        connection.sendmail(from_addr=my_email, to_addrs="learnPythonin100@yahoo.com",
+        connection.sendmail(from_addr=my_email, to_addrs="miathermopolis@yahoo.com",
                             msg=f"Subject:Happy Birthday\n\n{final_letter}")
